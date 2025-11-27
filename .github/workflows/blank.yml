@@ -35,4 +35,4 @@ jobs:
           whoami
 
       - name: Run a http docker image
-          docker run -d --name my-apache -p 8080:80 -v /home/tamil7000/actions-runner/vol/website:/usr/local/apache2/htdocs httpd:latest
+        run: docker run -d --name my-apache -p 8080:80 -v /home/tamil7000/actions-runner/vol/website:/usr/local/apache2/htdocs httpd:latest
